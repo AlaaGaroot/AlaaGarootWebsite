@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script defer src="fontawesome/js/all.js"></script>
+    <title>Alaa Garoot</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            font-family: 'Bookman Old Style';
+            scroll-behavior: smooth;
+            background-color: bisque;
+            color: brown;
+        }
+
+        .faded {
+            opacity: 0.8
+        }
+
+        .landing {
+            min-height: 100%;
+            min-height: calc(100% - 56px);
+            padding-top: 56px;
+        }
+
+        .btn-outline {
+            color:  brown;
+            background-color: aliceblue;
+            border: 2px solid black;
+            opacity: 0.5;
+            transition: 0.3s;
+
+        }
+
+        .btn-outline:hover {
+            opacity: 1;
+        }
+
+        .lang {
+            height: 60px;
+            transition: 0.3s;
+        }
+
+        .contacticon {
+            font-size: 65px;
+        }
+
+        .contacticon a {
+            color: darkslategray;
+        }
+
+        .course {
+            margin: 0 10px;
+            padding: 20px;
+            background-color:  coral;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .course h5 {
+            margin: 0;
+        }
+
+        .next {
+            font-size: 65px;
+        }
+
+        .next a {
+            color: brown;
+        }
+
+        #projectsBtn{
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#landing">Alaa Garoot<span class="sr-only">(current)</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Alaa!</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center">
+                I'm an Information Science & Technology Student at Temple
+                University.
+            </h5>
+        </div>
+        <div class="row my-4">
+            <div class="col my-3">
+                <img src="images/Android.PNG" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Android" />
+            </div>
+            <div class="col my-3">
+                <img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Python" />
+            </div>
+
+            <div class="col my-3">
+                <img src="images/Svelte.PNG" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Svelte" />
+            </div>
+
+            <div class="col my-3">
+                <img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Java" />
+            </div>
+
+            <div class="col my-3">
+                <img src="images/VS.PNG" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="VisualStudio" />
+            </div>
+
+
+
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
+            </div>
+            <div class="col">
+                <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
+            </div>
+            <div class="col">
+                <a href="#skills"><button type="button" class="btn btn-outline">Skills</button></a>
+            </div>
+            <div class="col">
+                <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
+            </div>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#projects" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Projects"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+        </div>
+
+        <br />
+
+        <button id="projectsBtn" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#clickLenfest">Lenfest project (Click Me!)</button>
+        <div id="clickLenfest" class="collapse">
+            <br />
+            <div class="row w-100">
+                <h5>Lenfest project</h5>
+            </div>
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    The Lenfest Center for Community Workforce Partnerships is an organization dedicated to serving
+                    the community at large in and around Temple’s campus. Currently we are working on enhancing
+                    Acquisition Request Form for the organization which will allow to have a process that ensures
+                    all information is validated and approved in a preliminary form.
+                </p>
+            </div>
+        </div>
+        <br /><br />
+              <button id="projectsBtn" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#clickSandwich">Sandwich project (Click Me!)</button>
+        <div id="clickSandwich" class="collapse">
+            <br />
+            <div class="row w-100">
+                <h5>Sandwich shop</h5>
+            </div>
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    A web application that includes a simple HTML page with a form to order a sandwich and
+                    processing that order by an ASPX server-side page.
+                </p>
+            </div>
+        </div>
+        <br /><br />
+              <button id="projectsBtn" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#clickMatrix">Matrices project (Click Me!)</button>
+        <div id="clickMatrix" class="collapse">
+            <br />
+            <div class="row w-100">
+                <h5>The matrices project</h5>
+            </div>
+            <div class="row w-100">
+                <p class="text-justify">
+                    Windows form application developed using C# allows the user to enter two matrices and performing multiple
+                    operations on them such as Addition, subtraction, and Multiplication.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 next">
+            <a href="#courses" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Courses"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
+        </div>
+        <div class="row mx-auto mb-4">
+            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Problem Solving and Programming</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Program Design and Abstraction</h5>
+            </div>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Data Structures and Algorithms in Java</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Discrete Mathematics</h5>
+            </div>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Probability & Statistics</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Database Management Systems</h5>
+            </div>
+        </div>
+
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Component-Based Software Design</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Network Architecture</h5>
+            </div>
+        </div>
+
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Client-Side Scripting for the Web</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Server-Side Scripting</h5>
+            </div>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#skills" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Skills"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="skills">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Skills</h4>
+        </div>
+        <div class="row mx-auto mb-4">
+            <h5 class="display-5 mx-auto faded text-center">My technical skills</h5>
+        </div>
+
+        <button id="projectsBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#mySkills">
+            Click to see skills
+        </button>
+
+        <div class="modal" id="mySkills">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Technical skills</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>Python</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>JAVA</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>C#</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>Database, SQL</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>Data Structures</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>ASPX</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>Kotlin</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>Android Studio</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>ASP, ASP.net</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>Visual Studio</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>jQuery</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>AngularJS</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>Git</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>Operating System</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>Svelte</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>HTML</h5>
+                            </div>
+                        </div>
+                        <div class="row w-100 justify-content-center my-3">
+                            <div class="col text-center course">
+                                <h5>Javascript</h5>
+                            </div>
+                            <div class="col text-center course">
+                                <h5>CSS</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5 next">
+            <a href="#contact" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Contact"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
+        </div>
+        <div class="row my-4 contacticon">
+            <a href="mailto:alaas.garoot@gmail.com" class="col mx-3">
+                <i class="fas fa-envelope-square"
+                   data-toggle="tooltip" data-placement="top" title="Email"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alaagaroot/" class="col mx-3">
+                <i class="fab fa-linkedin"
+                   data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
+            </a>
+            <a href="https://github.com/alaagaroot" class="col mx-3">
+                <i class="fab fa-github-square"
+                   data-toggle="tooltip" data-placement="top" title="Github"></i>
+            </a>
+
+        </div>
+        <div class="row mt-5">
+            <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
